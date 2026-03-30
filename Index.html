@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analista de Grupos - Jogo do Bicho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Analista de Grupos Pro</h1>
+        <p>Conversor de dezenas e análise de resultados</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <div class="input-group">
+                <input type="number" id="v1" value="166" placeholder="Valor A">
+                <span class="operator">×</span>
+                <input type="number" id="v2" value="2026" placeholder="Valor B">
+            </div>
+            <button id="btnAnalisar">PROCESSAR ANÁLISE</button>
+        </div>
+
+        <section id="saida" class="result-area">
+            <div class="section-label">Resultado do Cálculo</div>
+            <div id="nTotal" class="total-display"></div>
+
+            <div id="blocoEspecial" class="special-filter">
+                <div class="section-label gold">Filtro de 6 Números (Dezenas Fixas)</div>
+                <div id="gridF" class="filter-grid"></div>
+            </div>
+
+            <div class="section-label">Análise de Pares (Sobreposição)</div>
+            <div id="listaPares" class="pairs-list"></div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
